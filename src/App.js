@@ -6,17 +6,17 @@ import {robots} from './robots'
 
 
 class App extends Component {
-constructor(){
-    super()
-    this.state={
-        robots: robots,
-        searchfield: ''
+    constructor() {
+        super()
+        this.state = {
+            robots: robots,
+            searchfield: ''
+        }   
     }
-}
 
-onSearchHandle = (event) => {
+    onSearchHandle = (event) => {
     this.setState({ searchfield: event.target.value})
-}
+    }
 
     render (){
         
